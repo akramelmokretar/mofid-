@@ -703,14 +703,14 @@ function HeroSection() {
             variants={containerVariants}
             initial="hidden"
             animate="visible"
-            className="hero-shimmer-text text-5xl md:text-6xl lg:text-7xl xl:text-[80px] font-black tracking-tighter leading-[1.1] text-balance mb-8"
+            className="text-5xl md:text-6xl lg:text-7xl xl:text-[80px] font-black tracking-tighter leading-[1.1] text-balance mb-8"
             style={{ fontFamily: "var(--font-geist), sans-serif" }}
           >
             {words.map((word, wordIndex) => (
               <motion.span
                 key={wordIndex}
                 variants={wordVariants}
-                className="inline-block hero-word-glow"
+                className="inline-block hero-shimmer-text hero-word-glow"
                 style={{ marginRight: "0.25em" }}
               >
                 {word}
